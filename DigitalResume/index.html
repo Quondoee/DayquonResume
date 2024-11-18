@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="Logo.PNG" alt="Logo" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="skills.html">Skills/Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Portrait Image Above About Me -->
+        <section id="portrait">
+            <img src="Portrait.JPEG" alt="Dayquon Kelley Portrait" class="portrait">
+        </section>
+
+        <section id="home">
+            <h2>About Me</h2>
+            <p>Hey there! I'm Dayquon Kelley, Father, Musician, Leader, and last but not least a passionate developer, always striving to create cool and intuitive web apps, sites, etc. I love diving into new technologies, and in my free time, you can catch me making music like you hear right now. Listed above are some other tabs that go more into detail about who I am, so I'll leave you to explore. THANK YOU HAVE A GREAT DAY!!</p>
+        </section>
+
+        <section id="game-section">
+            <h2>CAUTION SNAKE AHEAD</h2>
+            <p>While you're here, test your Snake skills out before you go.</p>
+            <canvas id="snakeGameCanvas" width="400" height="400"></canvas>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Dayquon Kelley. All rights reserved.</p>
+        <audio autoplay loop>
+            <source src="Kanye Champion.mp3" type="audio/mpeg">       
+        </audio>
+    </footer>
+
+    <script src="snakeGame.js"></script>
+</body>
+</html>

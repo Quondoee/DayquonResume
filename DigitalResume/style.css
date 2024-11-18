@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between; 
+}
+
+.navbar {
+    background: #1a1a1a;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 210px;
+    position: absolute;
+    left: 20px; 
+    padding: 10px;
+    display: flex;
+    margin-bottom: -27px;
+    margin-left: -10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #bbb;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+}
+
+.container {
+    margin-top: 120px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#game-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+canvas {
+    background-color: #222;
+    border: 2px solid #00FFFF;
+    margin: 20px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.icon {
+    font-size: 48px;  
+    margin-right: 10px; 
+    vertical-align: middle; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.icon:hover {
+    transform: scale(3.0) !important; 
+}
+
+.container {
+    padding: 0 20px; 
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px; 
+    }
+}
+
+#skills {
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 32px;
+    color: #00FFFF;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#skills li {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 48px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+#skills ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#skills ul ul li {
+    font-size: 14px;
+    color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    #skills ul {
+        padding-left: 0;
+    }
+}
+
+#hobbies {
+    text-align: center;
+}
+
+#hobbies ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#hobbies li {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+#hobbies li:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 48px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+#hobbies p {
+    font-size: 16px;
+    color: #ccc;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+#portrait {
+    margin-bottom: 30px;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00FFFF;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+#game-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+canvas {
+    background-color: #222;
+    border: 2px solid #00FFFF;
+    margin: 20px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px; 
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #portrait .portrait {
+        width: 150px;
+        height: 150px;
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .navbar .logo {
+        height: auto; 
+        max-height: 120px; 
+        max-width: 100%; 
+        margin-left: 0; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .logo {
+        max-height: 100px; 
+        max-width: 80%; 
+        margin-left: 0; 
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #portrait .portrait {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    #home p {
+        font-size: 0.9em;
+    }
+
+    #skills h2 {
+        font-size: 28px;
+    }
+
+    #skills ul {
+        margin-top: 10px;
+    }
+
+    #hobbies ul {
+        grid-template-columns: 1fr;
+    }
+
+    #hobbies li {
+        padding: 15px;
+    }
+}
